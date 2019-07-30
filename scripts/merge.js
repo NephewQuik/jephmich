@@ -1,3 +1,6 @@
+// This is used to merge package.json files and delete a few entries we don't
+// want. It's extremely simple, expects very specific input, and doesn't have
+// any error handling.
 const fs = require("fs");
 
 const a = process.argv[2];
