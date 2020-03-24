@@ -1,0 +1,13 @@
+version = 1
+
+test_patterns = ["version = 1 [[analyzers]] name = \"terraform\" enabled = true"]
+
+exclude_patterns = ["version = 1 [[analyzers]] name = \"terraform\" enabled = true"]
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_path = "github.com/NephewQuik/jephmich"
+  dependencies_vendored = true
